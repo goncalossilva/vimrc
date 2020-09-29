@@ -293,11 +293,12 @@ let $PATH .= ':'.$HOME.'/.vim-ale/npm/node_modules/.bin'
 let $PATH .= ':'.$HOME.'/.vim-ale/gem/bin'
 let $PATH .= ':'.$HOME.'/.vim-ale/go/bin'
 let g:ale_elixir_elixir_ls_release = $HOME.'/.vim-ale/git/elixir-ls/release'
+let g:ale_go_staticcheck_lint_package = 1
 let g:ale_dockerfile_hadolint_use_docker = 'yes'
 " Lint and fix on save.
 let g:ale_fix_on_save = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
+"let g:ale_lint_on_text_changed = 'never'
+"let g:ale_lint_on_insert_leave = 0
 " Cycle between errors.
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
