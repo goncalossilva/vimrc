@@ -45,9 +45,9 @@ set ttymouse=xterm
 if has("gui_running")
   " Set font.
   if has("linux") || has("unix")
-    set guifont=Consolas\ 12,Monospace\ 12
+    set guifont=Consolas\ 10,Monospace\ 10
   else
-    set guifont=Consolas:h12,Monospace:h12
+    set guifont=Consolas:h14,Monaco:h12,Monospace:h12
   endif
 
   " Hide scrollbars, menu bars, toolbars, and tab pages.
