@@ -258,15 +258,15 @@ xmap ga <Plug>(EasyAlign)
 " - `npm install --prefix="$HOME/.vim-ale/npm" bash-language-server vim-language-server \
 "   prettier prettier-eslint eslint typescript htmlhint
 " - `gem install --install-dir="$HOME/.vim-ale/gem" rubocop solargraph`
-" - `GOPATH="$HOME/.vim-ale/go" go get golang.org/x/lint/golint`
-" - `GOPATH="$HOME/.vim-ale/go" GO111MODULE="on" go get mvdan.cc/sh/v3/cmd/shfmt`
+" - `GOPATH="$HOME/.vim-ale/go" go get honnef.co/go/tools/cmd/staticcheck`
+" - `GOPATH="$HOME/.vim-ale/go" GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt`
 " - `git clone https://github.com/elixir-lsp/elixir-ls.git $HOME/.vim-ale/git/elixir-ls && \
 "   cd $HOME/.vim-ale/git/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release`
 "
 " TODO: Java, Kotlin, Rust, Swift.
 let g:ale_linters = {
 \ 'elixir':     ['mix', 'elixir-ls'],
-\ 'go':         ['golint', 'govet', 'gopls'],
+\ 'go':         ['staticcheck', 'gopls'],
 \ 'python':     ['pylint', 'mypy', 'pyls'],
 \ 'ruby':       ['ruby', 'rubocop', 'solargraph'],
 \ 'typescript': ['eslint', 'tsserver'],
