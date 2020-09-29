@@ -58,6 +58,9 @@ if has("gui_running")
   set guioptions-=m
   set guioptions-=e
 
+  " Use dark theme variant if available.
+  set guioptions+=d
+
   " Set starting size in GUI mode.
   set lines=50 columns=120
 endif
