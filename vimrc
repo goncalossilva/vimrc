@@ -192,7 +192,6 @@ let g:lightline#ale#indicator_warnings = ' '
 let g:lightline#ale#indicator_infos = ' '
 
 " nerdtree.
-let NERDTreeShowHidden = 1
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 
