@@ -44,7 +44,7 @@ set ttymouse=xterm
 
 if has("gui_running")
   " Set font.
-  if has("linux") || has("unix")
+  if has("linux")
     set guifont=Consolas\ 10,Monospace\ 10
   else
     set guifont=Consolas:h14,Monaco:h12,Monospace:h12
