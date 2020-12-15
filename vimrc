@@ -23,6 +23,14 @@ set shortmess+=F  " Hide file name.
 set number
 set signcolumn=number
 
+" Use relative numbers in normal model, absolute numbers otherwise.
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if mode() != "i" | set rnu | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * set nornu
+augroup END
+
+
 " Highlight cursor line.
 set cursorline
 
