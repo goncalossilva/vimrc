@@ -30,7 +30,6 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * set nornu
 augroup END
 
-
 " Highlight cursor line.
 set cursorline
 
