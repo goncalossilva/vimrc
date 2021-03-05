@@ -268,10 +268,11 @@ xmap ga <Plug>(EasyAlign)
 "   cd $HOME/.vim-ale/git/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release`
 "
 " TODO: Java, Kotlin, Rust, Swift.
+" TODO: 'python':     ['pylint', 'mypy', 'pyls'],
 let g:ale_linters = {
 \ 'elixir':     ['mix', 'elixir-ls'],
 \ 'go':         ['staticcheck', 'gopls'],
-\ 'python':     ['pylint', 'mypy', 'pyls'],
+\ 'python':     ['flake8', 'mypy', 'pyls'],
 \ 'ruby':       ['ruby', 'rubocop', 'solargraph'],
 \ 'typescript': ['eslint', 'tsserver'],
 \ 'vim':        ['vimls'],
