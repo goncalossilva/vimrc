@@ -257,15 +257,17 @@ xmap ga <Plug>(EasyAlign)
 "
 " The defaults below rely on runtimes being installed and tools in $PATH
 " or in `$HOME/.vim-ale`. To install them there instead of globally:
-" - `mkdir -p $HOME/.vim-ale/{pip,npm,gem,go,git}`
-" - `pip install --target="$HOME/.vim-ale/pip" black pylint mypy python-language-server gitlint`
-" - `npm install --prefix="$HOME/.vim-ale/npm" bash-language-server vim-language-server \
+"
+" mkdir -p $HOME/.vim-ale/{pip,npm,gem,go,git}
+" #pip install --target="$HOME/.vim-ale/pip" black pylint mypy python-language-server gitlint
+" pip install --target="$HOME/.vim-ale/pip" black flake8 mypy python-language-server gitlint
+" npm install --prefix="$HOME/.vim-ale/npm" bash-language-server vim-language-server \
 "   prettier prettier-eslint eslint typescript htmlhint
-" - `gem install --install-dir="$HOME/.vim-ale/gem" rubocop solargraph`
-" - `GOPATH="$HOME/.vim-ale/go" go get honnef.co/go/tools/cmd/staticcheck`
-" - `GOPATH="$HOME/.vim-ale/go" GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt`
-" - `git clone https://github.com/elixir-lsp/elixir-ls.git $HOME/.vim-ale/git/elixir-ls && \
-"   cd $HOME/.vim-ale/git/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release`
+" gem install --install-dir="$HOME/.vim-ale/gem" rubocop solargraph
+" GOPATH="$HOME/.vim-ale/go" go get honnef.co/go/tools/cmd/staticcheck
+" GOPATH="$HOME/.vim-ale/go" GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
+" git clone https://github.com/elixir-lsp/elixir-ls.git $HOME/.vim-ale/git/elixir-ls && \
+" cd $HOME/.vim-ale/git/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release
 "
 " TODO: Java, Kotlin, Rust, Swift.
 " TODO: 'python':     ['pylint', 'mypy', 'pyls'],

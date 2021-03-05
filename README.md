@@ -19,12 +19,12 @@ For example (you probably don't need all of these):
 
 ```
 $ mkdir -p $HOME/.vim-ale/{pip,npm,gem,go,git}`
-$ pip install --target="$HOME/.vim-ale/pip" black pylint mypy python-language-server gitlint`
+$ pip install --target="$HOME/.vim-ale/pip" black pylint mypy python-language-server gitlint
 $ npm install --prefix="$HOME/.vim-ale/npm" bash-language-server vim-language-server prettier prettier-eslint eslint typescript htmlhint
-$ gem install --install-dir="$HOME/.vim-ale/gem" rubocop solargraph`
-$ GOPATH="$HOME/.vim-ale/go" go get golang.org/x/lint/golint`
-$ GOPATH="$HOME/.vim-ale/go" GO111MODULE="on" go get mvdan.cc/sh/v3/cmd/shfmt`
-$ git clone https://github.com/elixir-lsp/elixir-ls.git $HOME/.vim-ale/git/elixir-ls && cd $HOME/.vim-ale/git/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release`
+$ gem install --install-dir="$HOME/.vim-ale/gem" rubocop solargraph
+$ GOPATH="$HOME/.vim-ale/go" go get golang.org/x/lint/golint
+$ GOPATH="$HOME/.vim-ale/go" GO111MODULE="on" go get mvdan.cc/sh/v3/cmd/shfmt
+$ git clone https://github.com/elixir-lsp/elixir-ls.git $HOME/.vim-ale/git/elixir-ls && cd $HOME/.vim-ale/git/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release
 ```
 
 And then in your vim configuration:
