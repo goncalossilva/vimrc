@@ -322,9 +322,11 @@ function ALELSPMappings()
   if (l:lsp_found)
     nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
     nnoremap <buffer> <C-^> :ALEFindReferences<CR>
+    nnoremap <buffer> <leader>r :ALERename<CR>
   else
     silent! unmap <buffer> <C-]>
     silent! unmap <buffer> <C-^>
+    silent! unmap <buffer> <leader>r
   endif
 endfunction
 autocmd BufRead,FileType * call ALELSPMappings()
