@@ -221,8 +221,7 @@ let g:fzf_colors = {
 \}
 nnoremap <leader>o :Files<CR>
 nnoremap <leader>O :GFiles<CR>
-nnoremap <leader>f :Rg<CR>
-nnoremap <leader>F :Rg!<CR>
+nnoremap <leader>f :Rg!<CR>
 
 " vim-sneak.
 map s <Plug>Sneak_s
@@ -306,7 +305,7 @@ let g:ale_dockerfile_hadolint_use_docker = 'yes'
 let g:ale_fix_on_save = 1
 " Shortcuts.
 nnoremap <leader>h :ALEHover<CR>
-nnoremap <leader><leader>F :ALESymbolSearch<CR>
+nnoremap <leader>F :ALESymbolSearch<CR>
 " Cycle between errors.
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
