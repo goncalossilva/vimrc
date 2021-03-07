@@ -232,18 +232,6 @@ map t <Plug>Sneak_t
 map T <Plug>Sneak_T
 hi! link Sneak Search
 
-" pear-tree.
-let g:pear_tree_pairs = {
-\ '(':    {'closer': ')'},
-\ '[':    {'closer': ']'},
-\ '{':    {'closer': '}'},
-\ "'":    {'closer': "'"},
-\ '"':    {'closer': '"'},
-\ '"""':  {'closer': '"""'},
-\ '<!--': {'closer': '-->'},
-\}
-imap <CR> <Plug>(PearTreeExpand)<Plug>DiscretionaryEnd
-
 " vim-easy-align.
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)

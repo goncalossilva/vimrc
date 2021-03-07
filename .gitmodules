@@ -42,10 +42,6 @@
 	path = pack/vendor/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 	branch = master
-[submodule "pack/vendor/start/pear-tree"]
-	path = pack/vendor/start/pear-tree
-	url = https://github.com/tmsvg/pear-tree.git
-	branch = master
 [submodule "pack/vendor/start/vim-endwise"]
 	path = pack/vendor/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
@@ -97,4 +93,8 @@
 [submodule "pack/vendor/start/vim-visual-multi"]
 	path = pack/vendor/start/vim-visual-multi
 	url = https://github.com/mg979/vim-visual-multi.git
+	branch = master
+[submodule "pack/vendor/start/vim-closer"]
+	path = pack/vendor/start/vim-closer
+	url = git@github.com:rstacruz/vim-closer.git
 	branch = master
