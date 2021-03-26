@@ -56,6 +56,7 @@ if has("gui_running")
   else
     set guifont=Consolas:h14,Monaco:h12,Monospace:h12
   endif
+  set linespace=2
 
   " Hide scrollbars, menu bars, toolbars, and tab pages.
   set guioptions-=r
